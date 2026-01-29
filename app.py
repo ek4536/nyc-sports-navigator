@@ -13,8 +13,8 @@ st.set_page_config(page_title="NYC Sports Navigator", page_icon="🍎", layout="
 @st.cache_data
 def load_and_prep_data():
     try:
-        df_fac = pd.read_csv("Athletic_Facilities.csv")
-        df_prop = pd.read_csv("Parks_Properties.csv")
+        df_fac = pd.read_csv("data/Athletic_Facilities.csv")
+        df_prop = pd.read_csv("data/Parks_Properties.csv")
     except FileNotFoundError:
         st.error("CSV files not found."); return gpd.GeoDataFrame(), []
 
