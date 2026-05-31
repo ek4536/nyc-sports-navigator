@@ -1,0 +1,29 @@
+# System
+.DS_Store
+Thumbs.db
+
+# Data files (large or sensitive — add selectively if you want samples public)
+data/
+*.csv
+*.geojson
+*.shp
+*.dbf
+*.prj
+*.shx
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv
+venv/
+*.egg-info/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets / API keys
+secrets.py
+config_local.py
